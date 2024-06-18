@@ -1,0 +1,17 @@
+version: '3.8'
+
+name: 'jet'
+
+services:
+  jet:
+    image: jet:latest
+    build:
+      context: "../.."
+      dockerfile: .devcontainer/jet/Dockerfile
+    volumes:
+      - ../..:/jet:cached
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: "2g"

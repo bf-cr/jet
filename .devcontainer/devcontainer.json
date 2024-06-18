@@ -1,0 +1,24 @@
+{
+  "name": "JET",
+  "dockerComposeFile": [
+    "./jet/docker-compose.yml",
+    "docker-compose.yml"
+  ],
+  "service": "jet",
+  "workspaceFolder": "/jet",
+  "shutdownAction": "stopCompose",
+  "onCreateCommand": "",
+  "postCreateCommand": "",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.rulers": [ 80, 100, 120 ]
+      },
+      "extensions": [
+        "crystal-lang-tools.crystal-lang",
+        "mhutchie.git-graph",
+        "ms-vscode.live-server"
+      ]
+    }
+  }
+}
